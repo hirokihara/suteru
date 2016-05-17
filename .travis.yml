@@ -1,8 +1,7 @@
-language: ruby
-rvm:
-  - 2.2.5
-  - 2.3.1
-script:
-  - ruby --version
-  - echo test1
-  - echo test2
+language: node_js
+node_js:
+  - "4.4.1"
+before_script:
+  - npm install
+  - bower install
+  - grunt build
